@@ -2,6 +2,7 @@
 #define _MEMORYMGR_HPP_
 #include <stdlib.h>
 #include <assert.h>
+#include<mutex>//锁
 
 #ifdef _DEBUG
 #include <stdio.h>
@@ -39,6 +40,7 @@ public:
 		_pHeader = nullptr;
 		_nSize = 0;
 		_nBlockSize = 0;
+		xPrintf("MemoryAlloc\n");
 	}
 
 	~MemoryAlloc()
@@ -51,6 +53,7 @@ public:
 	//申请内存（初始化)
 	void* allocMemory(size_t nSize)
 	{
+		std::lock_guard<std::mutex> lg(_mutex);
 		if (!_pBuf)
 		{
 			initMemory();
@@ -81,12 +84,14 @@ public:
 	{
 		MemoryBlock* pBlock = (MemoryBlock*)((char*)pMem - sizeof(MemoryBlock));
 		assert(1 == pBlock->nRef);
-		if (--pBlock->nRef != 0) //被多次引用
-		{
-			return;
-		}
+		
 		if (pBlock->bPool) //池内，内存池以栈的形式回收资源
 		{
+			std::lock_guard<std::mutex> lg(_mutex);
+			if (--pBlock->nRef != 0) //被多次引用
+			{
+				return;
+			}
 			pBlock->pNext = _pHeader;
 			_pHeader = pBlock;
 		}
@@ -132,6 +137,7 @@ protected:
 	MemoryBlock* _pHeader;//头部内存单元
 	size_t _nSize; //内存单元的大小
 	size_t _nBlockSize;//内存单元的数量
+	std::mutex _mutex;
 };
 
 
@@ -161,6 +167,7 @@ private: //单例模式
 		init_szAlloc(129, 256, &_mem256);
 		init_szAlloc(257, 512, &_mem512);
 		init_szAlloc(513, 1024, &_mem1024);
+		xPrintf("MemoryMgr\n");
 	}
 
 	~MemoryMgr()
