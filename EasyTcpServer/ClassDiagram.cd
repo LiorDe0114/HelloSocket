@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClientSocket" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAIAAAAAAAEAAAAAAAAIAAAAAIBAAAJBAAAA=</HashCode>
+      <FileName>EasyTcpServer.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="INetEvent" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>EasyTcpServer.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CellServer" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CICQAAAEACABAAAAAAADIABAAAMAAIAAAAAAAACAAgQ=</HashCode>
+      <FileName>EasyTcpServer.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EasyTcpServer" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YIAQgAIEQCAAAUBAAAAAAAAABAEAAAAAAAEEAQCAAAA=</HashCode>
+      <FileName>EasyTcpServer.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyServer" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>server.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CELLTimestamp" Collapsed="true">
+    <Position X="4.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgEAAAAAAAAKAAAAAAAAACAAAkAAA=</HashCode>
+      <FileName>CELLTimestamp.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="DataHeader" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Login" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAEAAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LoginResult" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Logout" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LogoutResult" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="NewUserJoin" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAACAAAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="CMD" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAACAAAAAAAIAAAAAAABAAAAAAAgIAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EasyTcpClient">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAEAIAAAAAABAAAAIBAAAEAAAAAAAAEAACgAAA=</HashCode>
+      <FileName>EasyTcpClient.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="DataHeader" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Login" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAEAAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LoginResult" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Logout" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="LogoutResult" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="NewUserJoin" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAACAAAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="CMD">
+    <Position X="14.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAACAAAAAAAIAAAAAAABAAAAAAAgIAAA=</HashCode>
+      <FileName>MessageHeader.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
