@@ -35,7 +35,7 @@
 using namespace std;
 //原子操作 
 mutex m;
-const int tCount = 2;
+const int tCount = 8;
 const int mCount = 100000;
 const int nCount = mCount/tCount;
 void workFun(int index)
